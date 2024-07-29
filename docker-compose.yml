@@ -18,7 +18,7 @@ services:
     restart: on-failure
     command: "-s 'server=mysql;port=3306;database=${MYSQL_DB};user=${MYSQL_USER};password=${MYSQL_PWD}' -d"
     ports:
-      - 8056:80
+      - 8080:80
     depends_on: 
       - mysql
     networks: 
